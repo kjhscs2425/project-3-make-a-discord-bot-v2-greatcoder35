@@ -2,15 +2,15 @@
 
 When a user says: any message longer than 50 characters
 My bot will respond by: wow thats a lot of words, can you shorten that for me?
-
+-------------------------------------------------------------------------------------------------------
 When a user says: a swear word
 My bot will respond by: hey thats not very nice. please refrain from using that language
 
 When a user says: dewbs
 My bot will respond by: deebs
 
-When a user says: whats the date today
-My bot will respond by: (say the date in both words and numbers)
+When a user says: is ___ good at driving
+My bot will respond by: only say yes for some people :D
 
 When a user says: what classes do i have this week? 
 My bot will respond by: list all of my classes in vertical format (line break after each) and how many i have left this week in order of how many i have left from top to bottom
@@ -21,8 +21,8 @@ My bot will respond by: spam ping whoever i said to ping (send 20 consecutive me
 When a user says: tell me a riddle
 My bot will respond by: *gives riddle*
 
-When a user says: 
-My bot will respond by: 
+When a user says: play rock paper scissors
+My bot will respond by: playing rock paper scissors with you. add secret move you can play to always win every 3rd round
 
-When a user says:
-My bot will respond by:
+When a user says: play tic tac toe
+My bot will respond by: play tic tac toe
