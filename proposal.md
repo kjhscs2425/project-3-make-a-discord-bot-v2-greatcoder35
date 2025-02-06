@@ -2,13 +2,13 @@
 
 When a user says: any message longer than 50 characters
 My bot will respond by: wow thats a lot of words, can you shorten that for me?
--------------------------------------------------------------------------------------------------------
+
 When a user says: a swear word
 My bot will respond by: hey thats not very nice. please refrain from using that language
 
-When a user says: dewbs
-My bot will respond by: deebs
-
+When a user says: calc
+My bot will respond by: is short for calculator
+-------------------------------------------------------------------------------------------------------
 When a user says: is ___ good at driving
 My bot will respond by: only say yes for some people :D
 
