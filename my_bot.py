@@ -1,6 +1,7 @@
 from secret import swear_list
 import random
-last_game = None
+rps_ans = None
+
 """
 **Do NOT change the name of this function.**
 
@@ -34,22 +35,16 @@ This function will be called every time the `should_i_respond` function returns 
 * You can have the bot respond differently to different messages and users
 """
 def respond(user_message, user_name):
-  global last_game
 
   if len(user_message) >= 50:
-      return "wow, thats a long message, can you shorten that for me? ;)"
+    return "wow, thats a long message, can you shorten that for me? ;)"
   elif swear_list in user_message:
-      return "hey thats not very nice. please refrain from using that language"
+    return "hey thats not very nice. please refrain from using that language"
   elif "calc" in user_message:
-      return "calc is short for calculator"
+    return "calc is short for calculator"
   elif "rock paper scissors" in user_message:
-      last_game = random.choice(["rock", "paper", "scissors"])
-      f"ok let me think... i pick {last_game}"
+    return f"ok let me think... i pick {random.choice(["rock", "paper", "scissors"])}"
   elif "cheater" in user_message:
-      if last_game:
-          return ":shrug:"
-      else:
-          return "We haven't played yet! Start with 'rock paper scissors.'"
+    return ":shrug:"
   else:
-      return f"""what's up, 
-  {user_message.replace("bot", user_name)}"""
+    return f"what's up, {user_message.replace("bot", user_name)}"
