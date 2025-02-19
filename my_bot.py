@@ -22,8 +22,12 @@ def should_i_respond(user_message, user_name):
    "yell this: ",
    "ping ",
    "you suck",
+   "u suck",
    "your a bad bot",
-   "deebs"
+   "deebs",
+   "you know what else is massive?",
+   "what is massive?",
+   "help"
 ] + swear_list
     for word in trigger_word:
        if word in user_message:
@@ -68,10 +72,26 @@ def respond(user_message, user_name):
   elif "ping " in user_message:
      ptp = (user_message[5:] + " ") * 50
      return ptp
-  elif "you suck" in user_message:
-     return f' I think you meant to say "{user_message.replace("suck","are the best :star_struck:")}"'
+  elif "you suck" in user_message or "u suck" in user_message:
+     return f'I think you meant to say "{user_message.replace("suck","are the best :star_struck:")}"'
   elif "your a bad bot" in user_message:
      return f'I think you meant to say "{user_message.replace("a bad bot","an amazing bot :star_struck:")}"'
+  elif "you know what else is massive?" in user_message or "what is massive?" in user_message:
+     return "imagine if ninja got a LOOOOOOOOWWWWWWWWW TAAAAAPPPPEEERRRR FADDDDDDEEEEEEEE"
+  elif "help" in user_message:
+     return """here is my command list. have fun!
+     hi bot
+     calc
+     "good at driving" (try asking if someone is good at driving)
+     riddle
+     ping @____
+     you suck (talking to the bot)
+     your a bad bot
+     what is massive?
+     yell this: ___
+     
+     *if you swear the bot will get mad. b/c this is a school setting you can use the word "flip" instead of an actual swear word"
+"""
   else:
     return f"what's up, {user_message.replace("bot", user_name)}"
 
