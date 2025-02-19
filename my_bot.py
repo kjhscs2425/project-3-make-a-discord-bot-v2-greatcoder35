@@ -80,17 +80,16 @@ def respond(user_message, user_name):
      return "imagine if ninja got a LOOOOOOOOWWWWWWWWW TAAAAAPPPPEEERRRR FADDDDDDEEEEEEEE"
   elif "help" in user_message:
      return """here is my command list. have fun!
-     hi bot
-     calc
-     "good at driving" (try asking if someone is good at driving)
-     riddle
-     ping @____
-     you suck (talking to the bot)
-     your a bad bot
-     what is massive?
-     yell this: ___
-     
-     *if you swear the bot will get mad. b/c this is a school setting you can use the word "flip" instead of an actual swear word"
+   - if you swear the bot will get mad. b/c this is a school setting you can use the word "flip" instead of an actual swear word
+   - hi bot
+   - calc
+   - "good at driving" (try asking if someone is good at driving)
+   - riddle
+   - ping @(user)
+   - you suck (talking to the bot)
+   - your a bad bot
+   - what is massive?
+   - yell this: (message to yell)
 """
   else:
     return f"what's up, {user_message.replace("bot", user_name)}"
